@@ -1,22 +1,15 @@
-import pymysql.cursors
+import requests
+import json
+from airtable import Airtable
 
+key = 'keyda2y1mcH9pIIOS'
 
-connection = pymysql.connect(
-    host='localhost',
-    user='root',
-    passwd='',
-    database='deficientes_projeto'
-)
+airtable = Airtable('appXVFxRam3NYPQlM/', 'Table 1', key)
 
+lugar = []
 
-cursor = connection.cursor()
-
-
-comando_SQL = 'SELECT * FROM lugar'
-cursor.execute(comando_SQL)
-valores_lidos = cursor.fetchall()
-lista = []
-for c in valores_lidos:
-    lista.append(c)
-
-print(lista)
+lugar.append(str(input('Qual o nome do lugar? ')))
+lugar.append(str(input('Qual o nome do seu estado? ')))
+lugar.append(str(input('Qual o tipo de deficiência? ')))
+airtable.insert({'Lugar':f'{lugar[0]}', 'Estado': f'{lugar[1]}', 'Deficiencia': f'{lugar[2]}'})
+print(lugar)
