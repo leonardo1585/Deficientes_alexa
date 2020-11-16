@@ -27,7 +27,7 @@ SECRET_KEY = 'qk%8b5xq=j5vxs)vrd6=(2gl#x$$ep$y%1it#z)%nfyb^*(e*!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.ngrok.io', 'localhost']
+ALLOWED_HOSTS = ['.ngrok.io', 'localhost', '.pythonanywhere.com']
 
 
 # Application definition
@@ -52,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 
 ROOT_URLCONF = 'api.urls'
 
