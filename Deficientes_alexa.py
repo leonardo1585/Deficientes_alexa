@@ -138,4 +138,8 @@ sb.add_request_handler(OpcaoUmIntentHandler())
 sb.add_request_handler(OpcaoDoisIntentHandler())
 sb.add_request_handler(PegarCidadeIntentHandler())
 sb.add_request_handler(LerDadosIntentHandler())
+<<<<<<< HEAD
 sb.add_request_handler(SessionEndedRequestHandler())
+=======
+sb.add_request_handler(SessionEndedRequestHandler())
+>>>>>>> d74fbbecdcaaa8667e69ae2b2df699d70d6dd058

@@ -26,9 +26,13 @@ SECRET_KEY = 'qk%8b5xq=j5vxs)vrd6=(2gl#x$$ep$y%1it#z)%nfyb^*(e*!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+<<<<<<< HEAD
 
 ALLOWED_HOSTS = ['*']
+=======
+>>>>>>> d74fbbecdcaaa8667e69ae2b2df699d70d6dd058
 
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -52,6 +56,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 
 ROOT_URLCONF = 'api.urls'
 
