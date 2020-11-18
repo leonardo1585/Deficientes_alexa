@@ -32,7 +32,6 @@ ALLOWED_HOSTS = ['*']
 =======
 >>>>>>> d74fbbecdcaaa8667e69ae2b2df699d70d6dd058
 
-ALLOWED_HOSTS = ['*']
 
 # Application definition
 
